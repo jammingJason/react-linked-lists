@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { Node, LinkedList } from './linked-list';
 function App() {
+  const newLinkedList = new LinkedList();
+  // newLinkedList.push(12);
+  // newLinkedList.push(1);
+  // newLinkedList.push(11);
+
+  newLinkedList.unshift(40);
+  newLinkedList.unshift(30);
+  newLinkedList.unshift(20);
+  newLinkedList.unshift(10);
+  newLinkedList.average();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header"></header>
     </div>
   );
 }
